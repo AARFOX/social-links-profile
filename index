@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links Profile</title>
+    <style>
+        /* ========== Reset & Base ========== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        /* ========== Profile Card ========== */
+        .card {
+            background-color: #1E1E1E;
+            border-radius: 12px;
+            padding: 40px;
+            width: 100%;
+            max-width: 384px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        /* ========== Avatar ========== */
+        .avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            border: 3px solid #FFFFFF;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ========== Profile Info ========== */
+        .profile-info {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .profile-info h1 {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .profile-info .location {
+            color: #4ADE80;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .profile-info .bio {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 400;
+            opacity: 0.85;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2A2A2A;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: background-color 0.25s ease, transform 0.15s ease;
+            cursor: pointer;
+        }
+
+        .social-links a:hover {
+            background-color: #4ADE80;
+            color: #1E1E1E;
+            transform: translateY(-2px);
+        }
+
+        .social-links a:active {
+            transform: translateY(0);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 420px) {
+            .card {
+                padding: 32px 24px;
+            }
+
+            .profile-info h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <!-- Avatar -->
+        <div class="avatar">
+            <img src="https://i.pravatar.cc/150?img=47" alt="Jessica Randall">
+        </div>
+
+        <!-- Profile Info -->
+        <div class="profile-info">
+            <h1>Jessica Randall</h1>
+            <span class="location">London, United Kingdom</span>
+            <p class="bio">"Front-end developer and avid reader."</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">Frontend Mentor</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </main>
+</body>
+</html>
